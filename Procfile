@@ -1,2 +1,2 @@
-web: gunicorn fortune_lingrbot:app
+web: gunicorn wsgi:app
 

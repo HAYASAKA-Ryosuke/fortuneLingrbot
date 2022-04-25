@@ -1,5 +1,5 @@
 from flask import Flask,request
-import urllib2
+import urllib
 import json
 
 app = Flask(__name__)
@@ -20,7 +20,7 @@ def hello():
     #content_body_text = str(content_body_dict['events']['event_id']) #!fortune
     if(content_body_status == 'ok' and content_body_text == '!fortune'):
         url = "http://www.iheartquotes.com/api/v1/random"
-        htmldata = urllib2.urlopen(url)
+        htmldata = urllib.request.urlopen(url)
         fortune = escape(unicode(htmldata.read(),"utf-8"))
         htmldata.close()
         return fortune

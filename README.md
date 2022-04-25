@@ -3,7 +3,7 @@
 #Overview
 Lingr is chat service that has botAPI.
 This scripts running on the heroku.
-This scripts say variety quotes using the IloveQuotes(http://iheartquotes.com/api).
+This scripts say variety quotes using https://meigen.doodlenote.net/
 
 #use
 
